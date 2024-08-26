@@ -1,0 +1,319 @@
+/* Reset CSS */
+/* Apply Open Sans font to the entire page */
+
+h1{
+    margin-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Top Container Styles */
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 3;
+}
+
+nav {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-right: 50px;
+}
+
+.nav-list li {
+    margin-left: 20px; /* Adjust the spacing between links as needed */
+}
+
+/* Profile Container Styles */
+.profile-container {
+    background-color: #aa6bd7;
+    padding: 20px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+}
+
+.profile-card {
+    display: flex;
+    justify-content:space-between ;/* Ensure social icons align right */
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
+    /* position: relative; Only needed if using absolute positioning for icons */
+}
+
+.profile-image img {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile-content {
+    flex: 1;
+    font-size: large;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    /* margin-right: 50px; */
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+}
+
+/* Content Wrapper for Categories and Main Content */
+.content-wrapper {
+    display: flex;
+    padding: 20px;
+    gap: 20px; /* Space between the left and right sections */
+    /* width: 100%; Ensure it takes full width */
+}
+
+/* Categories Section */
+.categories-section {
+    flex: 0 0 30%; /* Occupies 30% of the screen */
+    background-color: #e0e0e0; /* Grey background */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.categories-card h2 {
+    margin-bottom: 15px;
+}
+
+.categories-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.categories-card ul li {
+    margin-bottom: 10px;
+}
+
+.categories-card ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.categories-card ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Important Links Section */
+.important-links {
+    background-color: #e0e0e0; /* Grey background, similar to categories section */
+    /* padding: 20px; */
+    border-radius: 5px;
+}
+
+.important-links h2 {
+    margin-bottom: 15px;
+}
+
+.important-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.important-links ul li {
+    margin-bottom: 10px;
+}
+
+.important-links ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.important-links ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Section */
+.main-content {
+    flex: 0 0 70%; /* Occupies 70% of the screen */
+    background-color: #e0e0e0; /* Grey background */
+    /* padding: 20px; */
+    border-radius: 5px;
+    overflow-x:unset;
+}
+
+.blog-section {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post img {
+    width: 100%;
+    height: auto;
+}
+
+.blog-content {
+    padding: 15px;
+}
+
+.badge {
+    display: inline-block;
+    background: #6a0dad;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+}
+
+.blog-content h3 {
+    margin: 10px 0;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #6a0dad;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.post-meta {
+    margin-top: 10px;
+}
+
+.post-meta span {
+    margin-right: 15px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Comment Section Styles */
+.comment-section {
+    margin-top: 0px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.comment {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.comment.reply {
+    margin-left: 50px; /* Indent replies */
+}
+
+.comment-avatar {
+    margin-right: 15px;
+}
+
+.comment-avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.comment-content {
+    flex: 1;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.comment-content h4 {
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+}
+
+.comment-content p {
+    margin: 5px 0;
+    color: #666;
+    line-height: 1.4;
+}
+
+.comment-meta {
+    display: flex;
+    gap: 10px;
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+}
+
+.comment-meta span {
+    cursor: pointer;
+}
+
+.comment-meta span:hover {
+    color: #000;
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #6a0dad;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Full-width Image */
+.blog-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Container for blog details */
+.blog-details {
+    display: flex;
+    margin-top: 20px; /* Space between the image and the sections */
+}
+
+/* Categories Section */
+.categories-section {
+    flex: 0 0 30%; /* 30% width */
+    background-color: #e0e0e0; /* Grey background */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Post Content Section */
+.post-content {
+    flex: 0 0 70%; /* 70% width */
+    padding: 20px;
+}

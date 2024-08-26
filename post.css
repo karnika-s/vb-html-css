@@ -1,0 +1,199 @@
+/* Reset CSS */
+a {
+    text-decoration: none;
+}
+h1{
+    margin-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: black;
+    text-decoration: none;
+}
+h1 :hover{
+    color: black; 
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Top Container Styles */
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 3;
+}
+
+nav {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-right: 50px;
+}
+
+.nav-list li {
+    margin-left: 20px; /* Adjust the spacing between links as needed */
+}
+
+/* Main Content Section */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    /* Center the content */
+}
+
+/* Full-width Image */
+.blog-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Container for Blog Details */
+.blog-details {
+    display: flex;
+    margin-top: 20px;
+    /* Space between the image and the sections */
+}
+
+/* Categories Section */
+.categories-section {
+    flex: 0 0 30%;
+    /* 30% width */
+    background-color: #e0e0e0;
+    /* Grey background */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Categories Card */
+.categories-card h2 {
+    margin-bottom: 15px;
+}
+
+.categories-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.categories-card ul li {
+    margin-bottom: 10px;
+}
+
+.categories-card label {
+    font-size: 14px;
+}
+
+/* Post Content Section */
+.post-content {
+    flex: 0 0 70%;
+    /* 70% width */
+    padding: 20px;
+}
+
+.blog-post {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Badge */
+.badge {
+    display: inline-block;
+    background: #6a0dad;
+    color: white;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+/* Related Blogs Section */
+.related-blogs {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.related-blogs h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Grid Layout for Blog Tiles */
+.blog-tiles {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px; /* Space between tiles */
+    margin: 0 10%; /* Margin on left and right to contract the container */
+}
+
+/* Blog Tile */
+.blog-tile {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-tile img {
+    width: 100%;
+    height: auto;
+}
+
+.blog-tile h4 {
+    color: black;
+    margin: 10px;
+    font-size: 18px;
+}
+
+.blog-tile p {
+    margin: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.blog-tile .read-more {
+    display: block;
+    margin: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.blog-tile .read-more:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    padding: 10px;
+    background-color: #6a0dad;
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
